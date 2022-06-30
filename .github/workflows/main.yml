@@ -3,6 +3,10 @@ name: Generate release-artifacts
 
 # on events
 on:
+  push:
+    branches: [ workflow ]
+  pull_request:
+    branches: [ main ]
   release:
     types: 
         - created
